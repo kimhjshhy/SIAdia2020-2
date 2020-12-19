@@ -48,7 +48,7 @@ class Jitter {
 
   display() {
     noStroke();
-    //filter(BLUR, 1);
+    filter(BLUR, 1);
     ellipse(this.x, this.y, this.diameter, this.diameter);
   }
 }
