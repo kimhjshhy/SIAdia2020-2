@@ -37,7 +37,7 @@ class Jitter {
   constructor() {
     this.x = random(width);
     this.y = random(height);
-    this.diameter = random(10, 130);
+    this.diameter = random(10, 250);
     this.speed = 0.1;
   }
 
@@ -48,7 +48,7 @@ class Jitter {
 
   display() {
     noStroke();
-    filter(BLUR, 1);
+    //filter(BLUR, 1);
     ellipse(this.x, this.y, this.diameter, this.diameter);
   }
 }
